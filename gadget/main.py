@@ -135,10 +135,12 @@ r = requests.get("https://api.github.com/repos/frida/frida/releases/latest")
 s = r.json()
 frida_version = s["tag_name"]
 for architecture in ["x86", "arm64", "arm"]:
-    frida_gadget_file_name = f"frida-gadget-{frida_version}-android-{architecture}.so"
+    frida_gadget_file_name = f"frida-gadget-{
+        frida_version}-android-{architecture}.so"
     if not os.path.exists(frida_gadget_file_name):
         print("Download:", f"{frida_gadget_file_name}.xz")
-        frida_gadget_url = f"https://github.com/frida/frida/releases/download/{frida_version}/{frida_gadget_file_name}.xz"
+        frida_gadget_url = f"https://github.com/frida/frida/releases/download/{
+            frida_version}/{frida_gadget_file_name}.xz"
         subprocess.run(
             [
                 "curl", "-L", "-O", frida_gadget_url
@@ -155,7 +157,8 @@ if shutil.which(keytool_file_name) is None:
     print("Warn:", '"keytool" not found in path')
     keytool_found = False
     for i in range(21, 17-1, -1):
-        keytool_file_name = f"C:\\Program Files\\Java\\jdk-{i}\\bin\\keytool.exe"
+        keytool_file_name = f"C:\\Program Files\\Java\\jdk-{
+            i}\\bin\\keytool.exe"
         if os.path.exists(keytool_file_name):
             keytool_found = True
             break
@@ -218,10 +221,11 @@ if not IS_GLOBAL:
         '<application android:requestLegacyExternalStorage="true"', 1
     )
 
-android_manifest = android_manifest.replace(
-    '<application',
-    '<application android:usesCleartextTraffic="true"', 1
-)
+if IS_GLOBAL:
+    android_manifest = android_manifest.replace(
+        '<application',
+        '<application android:usesCleartextTraffic="true"', 1
+    )
 
 target_1 = '<uses-permission'
 target_2 = '/>'
@@ -248,6 +252,11 @@ android_manifest = android_manifest.replace(
 android_manifest = android_manifest.replace(
     "com.hypergryph.arknights.fileprovider",
     "com.odpy.arknights.fileprovider"
+)
+
+android_manifest = android_manifest.replace(
+    "com.hypergryph.arknights.apkprovider",
+    "com.odpy.arknights.apkprovider"
 )
 
 
@@ -281,6 +290,20 @@ android_manifest = android_manifest.replace(
     "com.odpy.global.Arknights.permission.C2D_MESSAGE"
 )
 
+android_manifest = android_manifest.replace(
+    "com.YoStarEN.Arknights.hgShareProvider",
+    "com.odpy.global.Arknights.hgShareProvider",
+)
+
+android_manifest = android_manifest.replace(
+    "com.YoStarEN.Arknights.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.odpy.global.Arknights.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+)
+
+android_manifest = android_manifest.replace(
+    "com.facebook.app.FacebookContentProvider",
+    "com.facebook.app.FacebookContentProvider123456",
+)
 
 with open(f"{game_folder_name}/AndroidManifest.xml", "w") as f:
     f.write(android_manifest)
@@ -337,7 +360,8 @@ else:
         f.write(strings)
 
 for architecture, architecture_folder_name in [("x86", "x86"), ("arm64", "arm64-v8a"), ("arm", "armeabi-v7a")]:
-    frida_gadget_file_name = f"frida-gadget-{frida_version}-android-{architecture}.so"
+    frida_gadget_file_name = f"frida-gadget-{
+        frida_version}-android-{architecture}.so"
     if os.path.isdir(f"{game_folder_name}/lib/{architecture_folder_name}"):
         shutil.copyfile(
             frida_gadget_file_name,
