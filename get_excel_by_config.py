@@ -46,6 +46,7 @@ if not found:
     print("error, target version not found")
     exit(1)
 
+print("hash:", commit_hash)
 
 os.makedirs("tmp", exist_ok=True)
 
@@ -66,6 +67,15 @@ subprocess.run(
     ], cwd="tmp"
 )
 
+with open(f"tmp/{j}/gamedata/[uc]lua/GlobalConfig.lua") as f:
+    s = f.read()
+
+
+funcVer = s.partition(
+    'CUR_FUNC_VER'
+)[-1].partition('"')[-1].partition('"')[0]
+
+
 if os.path.isdir(f"tmp/{j}/gamedata/excel/"):
     shutil.rmtree(f"{k}/excel")
     shutil.move(f"tmp/{j}/gamedata/excel/", k)
@@ -80,14 +90,6 @@ shutil.rmtree("tmp/", onerror=rmtree_onerror)
 
 
 old_funcVer = config["networkConfig"][l]["content"]["funcVer"]
-
-with open(f"{k}/excel/data_version.txt") as f:
-    line = f.readline()
-
-
-funcVer = line.partition(
-    'torappu-data/'
-)[-1].partition('/')[0].capitalize()
 
 
 if funcVer != old_funcVer:
