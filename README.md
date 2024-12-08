@@ -49,7 +49,7 @@ Discord: [https://discord.com/invite/SmuB88RR5W](https://discord.com/invite/SmuB
 
 [https://support.bluestacks.com/hc/en-us/articles/4402611273485-BlueStacks-5-offline-installer](https://support.bluestacks.com/hc/en-us/articles/4402611273485-BlueStacks-5-offline-installer)
 
-[https://ak-build.bluestacks.com/public/app-player/windows/nxt/5.21.580.1017/e39c08284fe5415d2a039d8ad41091f0/FullInstaller/x64/BlueStacksFullInstaller_5.21.580.1017_amd64_native.exe](https://ak-build.bluestacks.com/public/app-player/windows/nxt/5.21.580.1017/e39c08284fe5415d2a039d8ad41091f0/FullInstaller/x64/BlueStacksFullInstaller_5.21.580.1017_amd64_native.exe)
+[https://ak-build.bluestacks.com/public/app-player/windows/nxt/5.21.610.1003/25343c4e28853b01095c62342d9cbc16/FullInstaller/x64/BlueStacksFullInstaller_5.21.610.1003_amd64_native.exe](https://ak-build.bluestacks.com/public/app-player/windows/nxt/5.21.610.1003/25343c4e28853b01095c62342d9cbc16/FullInstaller/x64/BlueStacksFullInstaller_5.21.610.1003_amd64_native.exe)
 
 (for global) Please use Android 7 32-bit (x86) emulator (default installation), armeabi-v7a game.
 
