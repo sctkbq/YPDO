@@ -1,0 +1,148 @@
+{
+    "server": {
+        "host": "127.0.0.1",
+        "port": 8443,
+        "enableServer": true,
+        "maintenanceMsg": "Server is currently under maintenance!",
+        "mode": "cn",
+        "adaptive": true,
+        "noProxy": false,
+        "gadget": false,
+        "useSu": false
+    },
+    "assets": {
+        "autoUpdate": false,
+        "downloadLocally": true,
+        "enableMods": false,
+        "skipModCacheValidation": false
+    },
+    "version": {
+        "android": {
+            "resVersion": "24-12-04-14-14-07-f01d68",
+            "clientVersion": "2.4.21"
+        }
+    },
+    "versionGlobal": {
+        "android": {
+            "resVersion": "24-12-03-17-16-44-43f926",
+            "clientVersion": "26.3.21"
+        }
+    },
+    "remote": {},
+    "networkConfig": {
+        "cn": {
+            "sign": "sign",
+            "content": {
+                "configVer": "5",
+                "funcVer": "V057",
+                "configs": {
+                    "V057": {
+                        "override": true,
+                        "network": {
+                            "gs": "{server}",
+                            "as": "{server}",
+                            "u8": "{server}/u8",
+                            "hu": "{server}/assetbundle/official",
+                            "hv": "{server}/config/prod/official/{0}/version",
+                            "rc": "{server}/config/prod/official/remote_config",
+                            "an": "{server}/config/prod/announce_meta/{0}/announcement.meta.json",
+                            "prean": "{server}/config/prod/announce_meta/{0}/preannouncement.meta.json",
+                            "sl": "https://ak.hypergryph.com/protocol/service",
+                            "of": "https://ak.hypergryph.com/index.html",
+                            "pkgAd": null,
+                            "pkgIOS": null,
+                            "secure": false
+                        }
+                    }
+                }
+            }
+        },
+        "global": {
+            "sign": "sign",
+            "content": {
+                "configVer": "1",
+                "funcVer": "V053",
+                "configs": {
+                    "V053": {
+                        "override": true,
+                        "network": {
+                            "gs": "{server}",
+                            "as": "{server}",
+                            "u8": "{server}/u8",
+                            "hu": "{server}/assetbundle/official",
+                            "hv": "{server}/config/prod/official/{0}/version",
+                            "rc": "{server}/config/prod/official/remote_config",
+                            "an": "{server}/config/prod/announce_meta/{0}/announcement.meta.json",
+                            "prean": "{server}/config/prod/announce_meta/{0}/preannouncement.meta.json",
+                            "sl": "https://www.arknights.global/terms_of_service",
+                            "of": "https://www.arknights.global",
+                            "pkgAd": null,
+                            "pkgIOS": null,
+                            "secure": false
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "crisisConfig": {
+        "selectedCrisis": "cc12"
+    },
+    "crisisV2Config": {
+        "selectedCrisis": "cc2"
+    },
+    "towerConfig": {
+        "season": "tower_season_7"
+    },
+    "rlv2Config": {
+        "userInitialChars": true
+    },
+    "battleReplayConfig": {
+        "anonymous": true
+    },
+    "userConfig": {
+        "restorePreviousStates": {
+            "is2": false,
+            "squadsAndFavs": false,
+            "ui": false
+        },
+        "activityMinStartTs": 1732766400,
+        "activityMaxStartTs": 1735156799,
+        "secretary": "char_2014_nian",
+        "secretarySkinId": "char_2014_nian@nian#4",
+        "background": "bg_rhodes_flower_1",
+        "theme": "tm_mainline_1",
+        "charRotation": {
+            "current": "1",
+            "preset": {
+                "1": {
+                    "name": "DoctorateUI",
+                    "background": "bg_rhodes_flower_1",
+                    "homeTheme": "tm_mainline_1",
+                    "profile": "char_2014_nian@nian#4",
+                    "profileInst": 2014,
+                    "slots": [
+                        {
+                            "charId": "char_2014_nian",
+                            "skinId": "char_2014_nian@nian#4"
+                        }
+                    ]
+                }
+            }
+        },
+        "fakeTime": -1,
+        "vision": true,
+        "simulateGacha": true,
+        "damageGauge": true
+    },
+    "charConfig": {
+        "favorPoint": 25570,
+        "potentialRank": 5,
+        "mainSkillLvl": 7,
+        "level": -1,
+        "evolvePhase": -1,
+        "skillsSpecializeLevel": 3,
+        "customUnitInfo": {},
+        "duplicateUnits": []
+    }
+}

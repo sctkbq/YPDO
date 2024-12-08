@@ -1,0 +1,266 @@
+{
+    "0": {
+        "squadId": "0",
+        "name": "Squad 1",
+        "slots": [
+            {
+                "charId": "char_4064_mlynar",
+                "skillIndex": 2,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1035_wisdel",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_wisdel"
+            },
+            {
+                "charId": "char_4133_logos",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_logos"
+            },
+            {
+                "charId": "char_4082_qiubai",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_qiubai"
+            },
+            {
+                "charId": "char_4116_blkkgt",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_blkkgt"
+            },
+            {
+                "charId": "char_1013_chen2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_chen2"
+            },
+            {
+                "charId": "char_2025_shu",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_shu"
+            },
+            {
+                "charId": "char_1016_agoat2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_agoat2"
+            },
+            {
+                "charId": "char_179_cgbird",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_cgbird"
+            },
+            {
+                "charId": "char_4087_ines",
+                "skillIndex": 1,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1028_texas2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_texas2"
+            },
+            {
+                "charId": "char_1029_yato2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_yato2"
+            }
+        ]
+    },
+    "1": {
+        "squadId": "1",
+        "name": "Squad 2",
+        "slots": [
+            {
+                "charId": "char_4064_mlynar",
+                "skillIndex": 2,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1035_wisdel",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_wisdel"
+            },
+            {
+                "charId": "char_4133_logos",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_logos"
+            },
+            {
+                "charId": "char_4082_qiubai",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_qiubai"
+            },
+            {
+                "charId": "char_4116_blkkgt",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_blkkgt"
+            },
+            {
+                "charId": "char_1013_chen2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_chen2"
+            },
+            {
+                "charId": "char_2025_shu",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_shu"
+            },
+            {
+                "charId": "char_1016_agoat2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_agoat2"
+            },
+            {
+                "charId": "char_179_cgbird",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_cgbird"
+            },
+            {
+                "charId": "char_4087_ines",
+                "skillIndex": 1,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1028_texas2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_texas2"
+            },
+            {
+                "charId": "char_1029_yato2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_yato2"
+            }
+        ]
+    },
+    "2": {
+        "squadId": "2",
+        "name": "Squad 3",
+        "slots": [
+            {
+                "charId": "char_4064_mlynar",
+                "skillIndex": 2,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1035_wisdel",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_wisdel"
+            },
+            {
+                "charId": "char_4133_logos",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_logos"
+            },
+            {
+                "charId": "char_4082_qiubai",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_qiubai"
+            },
+            {
+                "charId": "char_4116_blkkgt",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_blkkgt"
+            },
+            {
+                "charId": "char_1013_chen2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_chen2"
+            },
+            {
+                "charId": "char_2025_shu",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_shu"
+            },
+            {
+                "charId": "char_1016_agoat2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_agoat2"
+            },
+            {
+                "charId": "char_179_cgbird",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_cgbird"
+            },
+            {
+                "charId": "char_4087_ines",
+                "skillIndex": 1,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1028_texas2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_texas2"
+            },
+            {
+                "charId": "char_1029_yato2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_yato2"
+            }
+        ]
+    },
+    "3": {
+        "squadId": "3",
+        "name": "Squad 4",
+        "slots": [
+            {
+                "charId": "char_4064_mlynar",
+                "skillIndex": 2,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1035_wisdel",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_wisdel"
+            },
+            {
+                "charId": "char_4133_logos",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_logos"
+            },
+            {
+                "charId": "char_4082_qiubai",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_qiubai"
+            },
+            {
+                "charId": "char_4116_blkkgt",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_blkkgt"
+            },
+            {
+                "charId": "char_1013_chen2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_chen2"
+            },
+            {
+                "charId": "char_2025_shu",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_shu"
+            },
+            {
+                "charId": "char_1016_agoat2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_agoat2"
+            },
+            {
+                "charId": "char_179_cgbird",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_cgbird"
+            },
+            {
+                "charId": "char_4087_ines",
+                "skillIndex": 1,
+                "currentEquip": null
+            },
+            {
+                "charId": "char_1028_texas2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_texas2"
+            },
+            {
+                "charId": "char_1029_yato2",
+                "skillIndex": 2,
+                "currentEquip": "uniequip_002_yato2"
+            }
+        ]
+    }
+}
