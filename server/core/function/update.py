@@ -32,7 +32,7 @@ def updateData(url):
         if index[0] in url:
             local_dir = index[1]
             if version_redirection:
-                local_dir += server_config + f"/{res_version}"
+                local_dir += f"/{res_version}"
             if not os.path.isdir(local_dir):
                 os.makedirs(local_dir)
             localPath = url.replace(index[0], local_dir)
