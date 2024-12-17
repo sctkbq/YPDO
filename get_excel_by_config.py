@@ -28,6 +28,9 @@ else:
 
     l = "global"
 
+k += f"/{target_res_version}"
+
+
 r = requests.get(
     f"https://api.github.com/search/commits?q=repo:{repo_name}+{
         target_client_version}+{target_res_version}&sort=author-date&order=desc"
@@ -77,7 +80,9 @@ funcVer = s.partition(
 
 
 if os.path.isdir(f"tmp/{j}/gamedata/excel/"):
-    shutil.rmtree(f"{k}/excel")
+    if os.path.isdir(f"{k}/excel"):
+        shutil.rmtree(f"{k}/excel")
+    os.makedirs(k, exist_ok=True)
     shutil.move(f"tmp/{j}/gamedata/excel/", k)
 
 

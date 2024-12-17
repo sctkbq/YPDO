@@ -14,7 +14,8 @@
         "autoUpdate": false,
         "downloadLocally": true,
         "enableMods": false,
-        "skipModCacheValidation": false
+        "skipModCacheValidation": false,
+        "versionRedirection": false
     },
     "version": {
         "android": {

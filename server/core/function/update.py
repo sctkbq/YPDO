@@ -16,17 +16,31 @@ def updateData(url):
         ("https://ark-us-static-online.yo-star.com/announce/Android", './data/announce'),
     ]
 
+    server_config = read_json(CONFIG_PATH)
+
+    version_redirection = server_config["assets"]["versionRedirection"]
+
+    if version_redirection:
+        mode = server_config["server"]["mode"]
+
+        if mode == "cn":
+            res_version = server_config["version"]["android"]["resVersion"]
+        else:
+            res_version = server_config["versionGlobal"]["android"]["resVersion"]
+
     for index in BASE_URL_LIST:
         if index[0] in url:
-            if not os.path.isdir(index[1]):
-                os.makedirs(index[1])
-            localPath = url.replace(index[0], index[1])
+            local_dir = index[1]
+            if version_redirection:
+                local_dir += server_config + f"/{res_version}"
+            if not os.path.isdir(local_dir):
+                os.makedirs(local_dir)
+            localPath = url.replace(index[0], local_dir)
             break
 
     if not os.path.isdir('./data/excel/'):
         os.makedirs('./data/excel/')
 
-    server_config = read_json(CONFIG_PATH)
     if "Android/version" in url:
         data = requests.get(url).json()
         return data
