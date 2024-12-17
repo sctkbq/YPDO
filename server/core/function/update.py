@@ -31,7 +31,7 @@ def updateData(url):
     for index in BASE_URL_LIST:
         if index[0] in url:
             local_dir = index[1]
-            if version_redirection:
+            if version_redirection and index[0].startswith("https://raw.githubusercontent.com"):
                 local_dir += f"/{res_version}"
             if not os.path.isdir(local_dir):
                 os.makedirs(local_dir)
