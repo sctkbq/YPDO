@@ -1,4 +1,6 @@
-## OpenDoctoratePy Version Mod
+## OpenDoctoratePy Version Mod (Legacy)
+
+Deprecated due to new hg formats. Only for game version `2.3.81`.
 
 ### How-To
 
